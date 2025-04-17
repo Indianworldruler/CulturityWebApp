@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Culturity</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Culturity: Marketing in India's Diverse Landscape</h1>
+        
+        <div class="forms">
+            <div class="form-section">
+                <h2>Register</h2>
+                <form id="registrationForm">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <select id="region" required>
+                        <option value="">Select Your Region</option>
+                        <option value="North India">North India</option>
+                        <option value="South India">South India</option>
+                        <option value="East India">East India</option>
+                        <option value="West India">West India</option>
+                    </select>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <div class="form-section" style="margin-top: 20px;"> <!-- Added margin-top -->
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="text" id="loginUsername" placeholder="Username" required>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="user-info">
+            <h2>Behavior Insights</h2>
+            <div id="behaviorInsights"></div>
+
+            <h2>Upcoming Festivals</h2>
+            <div id="festivalRecommendations"></div>
+
+            <h2>Upcoming Cultural Events</h2>
+            <div id="eventCalendar"></div>
+        </div>
+
+        <div class="user-list">
+            <h2>Current Users</h2>
+            <ul id="userList"></ul>
+            <button id="deleteUser">Delete Current User</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
